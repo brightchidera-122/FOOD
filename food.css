@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(abstract-design-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Poller One";
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 1rem;
+  z-index: 1000;
+}
+
+.logo {
+  width: 200px;
+  color: rgba(255, 255, 255, 0.493);
+  font-size: 20px;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.navlinks li {
+  position: relative;
+}
+.navlinks a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Poller One";
+  transition: transform 0.3s ease-in-out;
+}
+.navlinks a:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+.twocolumn {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.columncontent {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.text-content h1 {
+  font-size: 50px;
+  color: white;
+}
+.text-content p {
+  margin-top: 30px;
+  color: white;
+}
+
+.btn1 {
+  background-color: rgba(165, 42, 42, 0.493);
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 35px;
+  transition: 0.3s ease;
+}
+.btn1:hover {
+  transform: scale(1.05);
+}
+.btn2 {
+  background-color: rgba(255, 255, 255, 0.619);
+  padding: 15px 30px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.porfoliosection {
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 120px;
+  padding-right: 90px;
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+
+  padding-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.header2 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.portfolio-item {
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.portfolio-item1 {
+  background-color: rgba(255, 255, 255, 0.833);
+  border-radius: 30px;
+  width: 280px;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-item1:hover {
+  transform: scale(1.07);
+}
+.portfolio-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-content {
+  padding: 1.5rem;
+  color: beige;
+}
+.portfolio-content h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: rgba(165, 42, 42, 0.708);
+}
+
+.portfolio-content h5 {
+  color: rgba(0, 0, 0, 0.475);
+  font-size: 15px;
+}
+
+.portfolio-content p {
+  color: black;
+  font-size: large;
+}
+
+.columncontent2 {
+  height: auto;
+  padding: 5rem 2rem;
+}
+
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columncontent3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 0.2rem 6rem;
+}
+
+.text-content h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.text-content p {
+  font-size: 1.3rem;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.imagecontent1 img {
+  height: 350px;
+}
+.imagecontent1 {
+  padding-left: 90px;
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio {
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+.portfolio-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-right: 40px;
+  justify-content: center;
+}
+.header3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  color: black;
+}
+
+.portfolio-item2 {
+  background-color: rgba(255, 255, 255, 0.833);
+  border-radius: 10px;
+  width: 240px;
+}
+.portfolio-image1 {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-content1 {
+  padding: 1.5rem;
+  color: beige;
+}
+.portfolio-content1 h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: rgba(165, 42, 42, 0.708);
+  text-align: center;
+
+  justify-content: center;
+}
+
+.portfolio-content1 h5 {
+  color: black;
+  font-size: 15px;
+}
+
+.portfolio-content1 p {
+  color: black;
+  font-size: large;
+}
+
+button {
+  background-color: rgba(165, 42, 42, 0.493);
+  padding: 15px 30px;
+  font-size: 10px;
+  border-radius: 40px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .columncontent {
+    grid-template-columns: 1fr;
+
+    padding-right: 250px;
+  }
+
+  .text-content h1 {
+    font-size: 20px;
+  }
+  .text-content p {
+    font-size: 15px;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    padding-left: 80px;
+  }
+  .header2 {
+    padding-left: 78px;
+  }
+
+  .columncontent3 {
+    grid-template-columns: 1fr;
+    padding-right: 70px;
+  }
+  .imagecontent1 {
+    padding-right: 270px;
+  }
+
+  .portfolio-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 10px;
+    padding-left: 250px;
+  }
+  .portfolio-item2 {
+  }
+}
